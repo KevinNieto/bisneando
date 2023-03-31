@@ -37,8 +37,8 @@ const wrappedView = (WrappedComponent, config) => ({ children, ...props }) => {
   // };
 
     return (
-      <SafeAreaView style={s`h-full`}>
-      <View style={s`bg-secondary flex-1`}>
+      <SafeAreaView style={s`h-full bg-amber-200`}>
+      <View style={s`bg-gray-200 flex-1 `}>
         <NavBar
           // showShoppingCart={showShoppingCart}
           // showSideMenu={showSideMenu}

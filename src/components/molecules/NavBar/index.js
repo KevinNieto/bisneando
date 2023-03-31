@@ -26,7 +26,7 @@ const NavBar = ({ showSideMenu, hideRightButton }) => {
   };
 
   return (
-    <View style={s`flex bg-white flex-row h-16`}>
+    <View style={s`flex bg-amber-400 flex-row h-16`}>
         
         <TouchableOpacity
           onPress={openDrawer}
