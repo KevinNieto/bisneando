@@ -1,8 +1,8 @@
 import React from "react";
 import { View, Text, Image, TouchableOpacity } from "react-native";
 import { s } from "react-native-wind";
-import { Badge } from "./../../atoms";
-import box from "../../../imgs/icons/box.png";
+import { Badge, Button } from "./../../atoms";
+import box from "../../../imgs/products/coca.jpeg";
 import clock from "../../../imgs/icons/clock.png";
 import { Actions } from "react-native-router-flux";
 import moment from "moment";
@@ -28,32 +28,37 @@ const ItemList = ({
   //const textPickUpDate = pickUpDate ? moment(pickUpDate).format("DD/MM/YYYY") : "No disponible";
   //const textRequestDate = deliveryDate ? moment(deliveryDate).format("DD/MM/YYYY") : "No disponible";
   return (
-    <TouchableOpacity style={s`w-full flex-row py-4`} onPress={() => goTo() }>
-      <View style={s`pr-8`}>
-        <Image
-          style={s`h-16 w-16`}
-          source={type === "historicals" ? clock : box}
-        />
-      </View>
-      <View>
-        <Text style={s`text-black font-bold w-56`}>No disponible</Text>
-        <Text style={s`pt-3 text-black font-semibold`}>
-          Fecha de recogida: No disponible
-        </Text>
-        <Text style={s`pb-4 text-black font-semibold`}>
-          Fecha de entrega: No disponible
-        </Text>
+    <TouchableOpacity style={s` h-70  rounded-lg  bg-white  flex-row  px-2 pb-2 w-28 `} onPress={() => goTo() }>
+     <View style={s`grid grid-cols-1 gap-4`}>
+          <View style={s`pr-12 grid-col-1`}>
+            <Image
+              style={s`h-24 w-24`}
+              source={type === "historicals" ? clock : box}
+            />
+          </View>
+          <View style={s`grid-col-1  w-24`} >
+            <Text style={s`text-black text-center text-sm truncate  leading-none`}>
+              Coca Cola Lata 355ml
+            </Text>
+          </View>
+          <View style={s`pt-2 grid-col-1 w-24`} >
+            <Text style={s` text-black text-center text-amber-400`}>
+              L15.00
+            </Text>
+          </View>
+          <View style={s`pt-3 grid-col-1 w-24`}>
+            <Button
+              style={[
+                s`h-8  pl-6 bg-amber-400 justify-center rounded-md `,
 
-        {/* <View
-        style={
-              s`bg-blue-200 rounded-lg justify-center items-center w-40 h-8 mb-2 `
-            }
-        >
-          <Text style={s`text-black text-base`}>En proceso</Text>
-        </View> */}
+              ]}
+              labelStyles={
+                s` font-bold text-center text-xs`}
 
-        {type === "shipments" && <Badge status={"process"} />}
-
+              title="Agregar"
+            
+            />
+          </View>
       </View>
     </TouchableOpacity>
   )

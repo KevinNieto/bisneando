@@ -9,7 +9,8 @@ const Home = () => {
 
   return (
     <View style={s`flex-1 px-6`}>
-      <Text>Componente Home</Text>
+      <ItemList type={"shipments"}/>
+
     </View>
   );
 };
