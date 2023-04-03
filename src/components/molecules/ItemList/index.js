@@ -28,25 +28,27 @@ const ItemList = ({
   //const textPickUpDate = pickUpDate ? moment(pickUpDate).format("DD/MM/YYYY") : "No disponible";
   //const textRequestDate = deliveryDate ? moment(deliveryDate).format("DD/MM/YYYY") : "No disponible";
   return (
-    <TouchableOpacity style={s` h-70  rounded-lg  bg-white  flex-row  px-2 pb-2 w-28 `} onPress={() => goTo() }>
-     <View style={s`grid grid-cols-1 gap-4`}>
+    <TouchableOpacity style={s`cols-3 h-70  rounded-lg  bg-white  flex-row mt-2 px-2 pb-2 w-28 mx-1`} onPress={() => goTo() }>
+      <View style={s`cols-1 gap-4`}>
           <View style={s`pr-12 grid-col-1`}>
             <Image
               style={s`h-24 w-24`}
               source={type === "historicals" ? clock : box}
             />
           </View>
-          <View style={s`grid-col-1  w-24`} >
+          <View style={s`col-1  w-24`} >
             <Text style={s`text-black text-center text-sm truncate  leading-none`}>
               Coca Cola Lata 355ml
             </Text>
           </View>
-          <View style={s`pt-2 grid-col-1 w-24`} >
+
+          <View style={s`pt-2 col-1 w-24`} >
             <Text style={s` text-black text-center text-amber-400`}>
               L15.00
             </Text>
           </View>
-          <View style={s`pt-3 grid-col-1 w-24`}>
+
+          <View style={s`pt-3 col-1 w-24`}>
             <Button
               style={[
                 s`h-8  pl-6 bg-amber-400 justify-center rounded-md `,

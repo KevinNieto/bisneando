@@ -3,13 +3,16 @@ import { View, Text} from "react-native";
 import wrappedView from "../../../WrappedView";
 import { s } from "react-native-wind";
 import { ItemList } from "../../molecules";
+import { GridProducts } from "../../organisms";
 
 const Home = () => {
 
 
   return (
     <View style={s`flex-1 px-6`}>
-      <ItemList type={"shipments"}/>
+      <GridProducts/>
+      <GridProducts/>
+      <GridProducts/>
 
     </View>
   );

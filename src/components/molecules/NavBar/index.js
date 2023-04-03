@@ -26,7 +26,7 @@ const NavBar = ({ showSideMenu, hideRightButton }) => {
   };
 
   return (
-    <View style={s`flex bg-amber-400 flex-row h-16`}>
+    <View style={s`flex bg-amber-400 flex-row  h-16`}>
         
         <TouchableOpacity
           onPress={openDrawer}
@@ -37,13 +37,13 @@ const NavBar = ({ showSideMenu, hideRightButton }) => {
         </TouchableOpacity>
       
 
-      <View style={s`flex-1 justify-center items-center`}>
-        <Image
-          style={s`w-8/12 h-11 self-center`}
-          source={LogoImage}
-          resizeMode="contain"
-        />
-      </View>
+        <View style={s`flex-1 justify-center items-center`}>
+          <Image
+            style={s`w-8/12 h-11 self-center`}
+            source={LogoImage}
+            resizeMode="contain"
+          />
+        </View>
 
 
         <View style={s`flex justify-center pt-2 pl-5 pr-5`}>

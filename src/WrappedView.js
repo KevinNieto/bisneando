@@ -46,8 +46,8 @@ const wrappedView = (WrappedComponent, config) => ({ children, ...props }) => {
           // productsNumber={productsNumber}
           // hideRightButton={hideRightButton}
         />
- 
-        <View style={s`flex flex-row justify-between px-6 py-6`}>
+ {/* aqui modificar */}
+        <View style={s`flex flex-row justify-between px-6 py-4`}>
             <Text style={s`text-2xl text-primary font-bold`}>
                 {heading}
             </Text>
