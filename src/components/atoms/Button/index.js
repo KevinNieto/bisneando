@@ -44,7 +44,7 @@ const ButtonWrapper = ({
       {source ? (
         <ImageBackground
           source={source}
-          style={s`h-5 w-5`}
+          style={s`h-4 w-4`}
           imageStyle={s`rounded-md`}
           resizeMode="stretch"
         >
@@ -63,7 +63,7 @@ const ButtonWrapper = ({
           {iconName && (
             <Icon
               name={iconName}
-              style={s`self-center pl-2 text-xl text-icon-input`}
+              style={s`self-center pl-1 text-xl text-icon-input`}
             />
           )}
           <Text style={labelStyles}>{title}</Text>
