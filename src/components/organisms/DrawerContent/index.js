@@ -9,7 +9,6 @@ import { DrawerMenuItem } from "../../atoms";
 
 const DrawerContent = () => {
   const MENU = getMenuDrawer();
-  console.log("MENU:" , MENU);
   // const AuthUser = useContext(AuthUserContext);
   // const { isAuthenticated, email, fullName, role } = AuthUser;
   //PROVISIONAL
