@@ -18,6 +18,7 @@ import {
   CartView,
   ConfigView, 
   CouponsView, 
+  DetailProduct, 
   FavoritesView, 
   HistoricalsView, 
   HomeView, 
@@ -79,6 +80,12 @@ const StackRouter = () => {
             title="Payment"
             key="payment"
             component={PaymentView}
+            hideNavBar={true}
+          />
+          <Scene
+            title="DetailProduct"
+            key="detailProduct"
+            component={DetailProduct}
             hideNavBar={true}
           />
 

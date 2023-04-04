@@ -7,3 +7,4 @@ export { default as HistoricalsView } from "./Historicals";
 export { default as SignInModal } from "./SignIn";
 export { default as ConfigView} from "./Config";
 export { default as CartView} from "./Cart";
+export { default as DetailProduct} from "./DetailProduct";

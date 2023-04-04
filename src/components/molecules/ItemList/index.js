@@ -4,6 +4,7 @@ import { s } from "react-native-wind";
 import { Badge, Button } from "./../../atoms";
 import box from "../../../imgs/products/coca.jpeg";
 import clock from "../../../imgs/icons/clock.png";
+import corazon from "../../../imgs/icons/corazon.png";
 import { Actions } from "react-native-router-flux";
 import moment from "moment";
 
@@ -13,7 +14,7 @@ const ItemList = ({
 }) => {
 
   const goTo = () => {
-    Actions.detailShipment()
+    Actions.detailProduct()
   }
 
 //  const { name, profilePicture, statusClient, status, pickUpDate, deliveryDate, nameClient, clientInfo } = item.data;
@@ -48,16 +49,27 @@ const ItemList = ({
             </Text>
           </View>
 
-          <View style={s`pt-3 col-1 w-24`}>
+          <View style={s`pt-3 mr-1 col-2 flex-row w-24`}>
             <Button
               style={[
-                s`h-8  pl-6 bg-amber-400 justify-center rounded-md `,
+                s`h-8 pl-4 pr-4   bg-red-500 justify-center rounded-md  fill-white`,
+
+              ]}
+              labelStyles={
+                s` font-bold color-white text-center text-xs`}
+
+              source={corazon}
+            
+            />
+            <Button
+              style={[
+                s`h-8 pr-1 pr-2 ml-2 bg-amber-400 justify-center rounded-full  mr-1`,
 
               ]}
               labelStyles={
                 s` font-bold text-center text-xs`}
 
-              title="Agregar"
+              iconName={"plus"}
             
             />
           </View>
