@@ -8,3 +8,4 @@ export { default as RowInput } from "./RowInput";
 export { default as DatePicker } from "./DatePicker";
 export { default as CheckBox } from "./CheckBox";
 export { default as ActionButtons } from "./ActionButtons";
+export { default as Counter } from "./Counter";

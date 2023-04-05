@@ -1,4 +1,5 @@
 export { default as Button } from "./Button";
+export { default as IncrementButton } from "./IncrementButton";
 export { default as Input } from "./Input";
 export { default as DrawerMenuItem } from "./DrawerMenuItem";
 export { default as RowConfig } from "./RowConfig";
