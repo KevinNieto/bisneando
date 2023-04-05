@@ -99,6 +99,7 @@ const StackRouter = () => {
           <Scene
             title="Cart"
             key="cart"
+            initial={true}
             component={CartView}
             hideNavBar={true}
           />
@@ -123,7 +124,7 @@ const StackRouter = () => {
               title="Bienvenido a Bisneando"
               key="home"
               component={HomeView}
-              initial={true}
+             
               hideNavBar={true}
               icon={({ focused }) => (
                 <Icon

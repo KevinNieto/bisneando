@@ -12,12 +12,11 @@ const BlockButtonWrapper = ({ title, event }) => {
   return (
     <TouchableOpacity
       onPress={onPress}
-      style={s`h-12 w-full bg-primary justify-center items-center`}
+      style={s`mt-2 ml-6 mr-6 h-12 w-full bg-amber-400 justify-center items-center rounded-lg  `}
     >
-      <ImageBackground source={background} resizeMode="stretch" 
-          style={s`flex-1 justify-center items-center w-full`}>
+     
         <Text style={s`text-white font-bold`}>{title}</Text>
-      </ImageBackground>
+     
     </TouchableOpacity>
   );
 };
