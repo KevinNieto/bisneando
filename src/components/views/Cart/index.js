@@ -4,14 +4,15 @@ import wrappedView from "../../../WrappedView";
 import { s } from "react-native-wind";
 import { ItemList } from "../../molecules";
 import { BlockButton } from "../../atoms";
-import { ActionTools } from "../../organisms";
+import { ActionTools, ItemCart } from "../../organisms";
 
 const Cart = () => {
 
 
   return (
     <View style={s`flex-1 px-6`}>
-    
+      <ItemCart/>
+      <ItemCart/>
       <ActionTools/>
     </View>
   );
@@ -20,7 +21,7 @@ const Cart = () => {
 const cartConfigView = {
   showHeader: true,
   showSideMenu: true,
-  heading: "Carrito de Compras!",
+  heading: "Carrito de Compras:",
   hideRightButton: true,
 };
 

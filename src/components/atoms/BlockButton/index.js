@@ -15,7 +15,7 @@ const BlockButtonWrapper = ({ title, event }) => {
       style={s`mt-2 ml-6 mr-6 h-12 w-full bg-amber-400 justify-center items-center rounded-lg  `}
     >
      
-        <Text style={s`text-white font-bold`}>{title}</Text>
+        <Text style={s` font-bold`}>{title}</Text>
      
     </TouchableOpacity>
   );
