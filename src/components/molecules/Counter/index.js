@@ -12,7 +12,7 @@ import moment from "moment";
 const Counter = ({
 }) => {
   return (
-        <View style={s`mr-1 col-2 flex-row w-24 pb-2`}>
+        <View style={s`mr-1 col-2 flex-row w-24 pt-0.5 `}>
           <IncrementButton
             style={[
               s`h-7 w-7  pb-1 pl-1.5  bg-amber-400   rounded-full  fill-white`,
@@ -21,7 +21,7 @@ const Counter = ({
               s` font-bold color-white `}
             iconName={"minus"}
             />
-          <View style={s`pt-1  w-20 mx-2`} >
+          <View style={s`pt-1  w-20 mx-1`} >
             <Text style={s` text-black text-sm text-center text-amber-400`}>
               Cantidad: 1
             </Text>
