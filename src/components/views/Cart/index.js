@@ -13,6 +13,12 @@ const Cart = () => {
     <View style={s`flex-1 px-6`}>
       <ItemCart/>
       <ItemCart/>
+
+      <View style={s`col-1 text-end justify-center `} >
+        <Text style={s`pl-1 pt-2  text-right items-center text-black font-bold  text-lg `}>
+          Subtotal: L.3000.00
+        </Text>
+      </View>  
       <ActionTools/>
     </View>
   );
