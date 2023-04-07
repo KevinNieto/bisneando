@@ -3,13 +3,15 @@ import { View, Text} from "react-native";
 import wrappedView from "../../../WrappedView";
 import { s } from "react-native-wind";
 import { ItemList } from "../../molecules";
+import { AddButton } from "../../atoms";
 
 const Payment = () => {
 
 
   return (
     <View style={s`flex-1 px-6`}>
-      <Text>Componente Metodos de Pago</Text>
+      
+      <AddButton/>
     </View>
   );
 };

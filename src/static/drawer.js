@@ -66,6 +66,17 @@ const getMenuDrawer = () => {
     },
     {
       key: "menu-item-2",
+      title: "Mis Tarjetas",
+      role: "all",
+      icon: "card-bulleted",
+      color: THEME.bisneando.blue,
+      event: () => {
+        Actions.payment();
+      },
+      // uid: getUid(),
+    },
+    {
+      key: "menu-item-3",
       title: "Mis Cupones",
       role: "all",
       icon: "tag",
@@ -76,7 +87,7 @@ const getMenuDrawer = () => {
       // uid: getUid(),
     },
     {
-      key: "menu-item-3",
+      key: "menu-item-4",
       title: "Historial",
       role: "all",
       icon: "history",
@@ -96,7 +107,7 @@ const getMenuDrawer = () => {
     //   },
     // },
     {
-      key: "menu-item-4",
+      key: "menu-item-5",
       title: "Mis Direcciones",
       role: "all",
       icon: "pin",
@@ -106,7 +117,7 @@ const getMenuDrawer = () => {
       },
     },
     {
-      key: "menu-item-5",
+      key: "menu-item-6",
       title: "Configuración",
       role: "all",
       icon: "cog",
@@ -116,7 +127,7 @@ const getMenuDrawer = () => {
       },
     },
     {
-      key: "menu-item-6",
+      key: "menu-item-7",
       title: "Cerrar sesión",
       role: "all",
       icon: "logout",

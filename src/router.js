@@ -79,6 +79,7 @@ const StackRouter = () => {
           <Scene
             title="Payment"
             key="payment"
+            initial={true}
             component={PaymentView}
             hideNavBar={true}
           />
@@ -89,17 +90,11 @@ const StackRouter = () => {
             hideNavBar={true}
           />
 
-          <Scene
-            title="Payment"
-            key="payment"
-            component={PaymentView}
-            hideNavBar={true}
-          />
-
+    
           <Scene
             title="Cart"
             key="cart"
-            initial={true}
+            
             component={CartView}
             hideNavBar={true}
           />
