@@ -50,9 +50,7 @@ const ChangePassForm = () => {
           ]}
           title="Cambiar contraseña"
   
-          source={
-             require("../../../imgs/gradient-button.png")
-          }
+       
         />
       </View>
     </View>

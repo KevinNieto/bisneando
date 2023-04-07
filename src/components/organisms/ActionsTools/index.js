@@ -4,7 +4,7 @@ import { s } from "react-native-wind";
 import { BlockButton } from "../../atoms";
 import GridProducts from "../GridProducts";
 
-const background = require("../../../imgs/gradient-button.png");
+
 
 
 const ActionTools = ({ title, event }) => {

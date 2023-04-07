@@ -1,7 +1,7 @@
 import React from "react";
 import { ImageBackground, Text, TouchableOpacity } from "react-native";
 import { s } from "react-native-wind";
-const background = require("../../../imgs/gradient-button.png");
+
 
 
 const BlockButtonWrapper = ({ title, event }) => {

@@ -3,8 +3,6 @@ import {  View } from "react-native";
 import { s } from "react-native-wind";
 import { BlockButton } from "../../atoms";
 
-const background = require("../../../imgs/gradient-button.png");
-
 
 const AddButton = ({ title, event }) => {
   const onPress = () => {

@@ -70,7 +70,7 @@ const SignInForm = ({ submit, loading = false, openDialog }) => {
           style={s`h-12 justify-center rounded-md`}
           disabled={loading}
           labelStyles={s`text-center text-white font-semibold text-sm`}
-          source={require("../../../imgs/gradient-button.png")}
+         
           title="Iniciar sesión"
           event={Actions.shipmentsView()}
           loading={loading}
