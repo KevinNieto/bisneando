@@ -14,6 +14,7 @@ import { DrawerContent } from "./components/organisms";
 import { THEME } from "./styles";
 import {
 
+  AddEditCreditCardView,
   AddressView,
   CartView,
   ConfigView, 
@@ -28,6 +29,7 @@ import {
   SignInModal,
 
 } from "./components/views";
+
 
 const StackRouter = () => {
   return (
@@ -79,8 +81,16 @@ const StackRouter = () => {
           <Scene
             title="Payment"
             key="payment"
-            initial={true}
+           
             component={PaymentView}
+            hideNavBar={true}
+          />
+
+          <Scene
+            title="AddEditCreditCard"
+            key="addEditCreditCard"
+            initial={true}
+            component={AddEditCreditCardView}
             hideNavBar={true}
           />
           <Scene

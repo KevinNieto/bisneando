@@ -9,3 +9,4 @@ export { default as DatePicker } from "./DatePicker";
 export { default as CheckBox } from "./CheckBox";
 export { default as ActionButtons } from "./ActionButtons";
 export { default as Counter } from "./Counter";
+export { default as CreditCardForm } from "./CreditCardForm";
