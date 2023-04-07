@@ -47,7 +47,7 @@ const wrappedView = (WrappedComponent, config) => ({ children, ...props }) => {
           // hideRightButton={hideRightButton}
         />
  {/* aqui modificar */}
-        <View style={s`flex flex-row justify-between px-6 py-4`}>
+        <View style={s`flex flex-row justify-between px-6 py-3`}>
             <Text style={s`text-2xl text-primary font-bold`}>
                 {heading}
             </Text>

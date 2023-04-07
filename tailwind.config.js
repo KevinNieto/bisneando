@@ -1,7 +1,10 @@
 module.exports = {
   content: [],
   theme: {
-    extend: {},
+    fontSize: {
+      sm: '0.1rem',
+
+    }
   },
   plugins: [],
   corePlugins: require('tailwind-rn/unsupported-core-plugins'),

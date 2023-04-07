@@ -9,3 +9,4 @@ export { default as Badge } from "./Badge";
 export { default as PlaceholderList } from "./PlaceholderList";
 export { default as RowInfo } from "./RowInfo";
 export { default as BlockButton } from "./BlockButton";
+export { default as CreditCard } from "./CreditCard";

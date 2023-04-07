@@ -15,7 +15,7 @@ const AddButton = ({ title, event }) => {
     >
         
         <BlockButton
-                 title={"Agregar"}
+                 title={"Agregar una nueva tarjeta"}
 
         />
      
