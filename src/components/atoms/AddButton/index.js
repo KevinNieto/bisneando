@@ -5,9 +5,6 @@ import { BlockButton, Button } from "../../atoms";
 
 
 const AddButton = ({ title, event, doing, isEditing }) => {
-  const onPress = () => {
-    event();
-  };
 
   return doing ? (
     <View
@@ -61,7 +58,8 @@ const AddButton = ({ title, event, doing, isEditing }) => {
   >
       
       <BlockButton
-               title={"Agregar una nueva tarjeta"}
+               title={title}
+               event={event}
 
       />
    

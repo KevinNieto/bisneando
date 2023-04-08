@@ -6,13 +6,11 @@ import { s } from "react-native-wind";
 
 
 const BlockButtonWrapper = ({ title, event }) => {
-  const onPress = () => {
-    Actions.addEditCreditCard()
-  };
+  
 
   return (
     <TouchableOpacity
-      onPress={onPress}
+      onPress={event}
       style={s`mt-2 ml-6 mr-6 h-12 w-full bg-amber-400 justify-center items-center rounded-lg  `}
     >
      

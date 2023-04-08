@@ -3,13 +3,23 @@ import { View, Text} from "react-native";
 import wrappedView from "../../../WrappedView";
 import { s } from "react-native-wind";
 import { ItemList } from "../../molecules";
+import { AddButton } from "../../atoms";
+import { ItemCoupon } from "../../organisms";
+import { Actions } from "react-native-router-flux";
 
 const Coupons = () => {
+  const onPress = () => {
+    Actions.addCoupon()
+  };
 
 
   return (
     <View style={s`flex-1 px-6`}>
-      <Text>Componente Cupones</Text>
+      <ItemCoupon/>
+      <AddButton 
+        title={"Agregar un nuevo cupón"}
+        event={onPress}
+      />
     </View>
   );
 };
