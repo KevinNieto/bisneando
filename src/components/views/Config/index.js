@@ -10,10 +10,7 @@ const Config = () => {
 
   return (
     <View style={s`w-full items-center mt-10`}>
-      <RowConfig
-        title="Rastreo"
-      />
-      <ChangePassForm />
+      <Text>Configuacion Component</Text>
     </View>
   );
 };
