@@ -1,11 +1,15 @@
 import React from "react";
 import { View, Text, Switch, TouchableOpacity, ImageBackground, Platform } from "react-native";
+import { Actions } from "react-native-router-flux";
 import { s } from "react-native-wind";
 
 
 
 const CreditCard = ({ isExample, cardType}) => {
   let card= require("../../../imgs/cards/visa.png");
+  const onPress = () => {
+    Actions.addEditCreditCard()
+  };
 
 
   if (cardType==="visa") {
@@ -50,7 +54,7 @@ const CreditCard = ({ isExample, cardType}) => {
         </View>
     </TouchableOpacity>
   ):( 
-    <TouchableOpacity style={s`p-1 mb-1 w-full`}>
+    <TouchableOpacity style={s`p-1 mb-1 w-full`} onPress={onPress} >
       <View style={s`text-white `}>
         <ImageBackground style={s`w-full h-52 pb-2`} source={card}>
           <View style={s`pl-7 flex flex-row mt-20`}>

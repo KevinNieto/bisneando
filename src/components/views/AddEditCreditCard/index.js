@@ -13,7 +13,7 @@ const AddEditCreditView = () => {
     <View style={s`flex-1 px-5`}>
       <CreditCard isExample={true} cardType={"visa"}/>
       <CreditCardForm/>
-      <AddButton/>
+      <AddButton doing={true} isEditing={true} />
     </View>
   );
 };

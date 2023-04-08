@@ -1,12 +1,13 @@
 import React from "react";
 import { ImageBackground, Text, TouchableOpacity } from "react-native";
+import { Actions } from "react-native-router-flux";
 import { s } from "react-native-wind";
 
 
 
 const BlockButtonWrapper = ({ title, event }) => {
   const onPress = () => {
-    event();
+    Actions.addEditCreditCard()
   };
 
   return (
