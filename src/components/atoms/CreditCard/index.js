@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text, Switch, TouchableOpacity, ImageBackground } from "react-native";
+import { View, Text, Switch, TouchableOpacity, ImageBackground, Platform } from "react-native";
 import { s } from "react-native-wind";
 
 
@@ -34,9 +34,18 @@ const CreditCard = ({ isExample, cardType}) => {
               12/24
             </Text>
           </View>
-          <View style={s` pl-7 pt-3 `}>
-            <Text style={s`pt-0.5  text-white `}>ALEJANDRO FERNANDO VALLADARES </Text>
-          </View>
+          { Platform.OS === 'ios' ? 
+            (
+              <View style={s` pl-7 pt-3 `}>
+                <Text style={s`pt-0.5  text-white `}>ALEJANDRO FERNANDO VALLADARES </Text>
+              </View>
+            ):
+            (
+              <View style={s` pl-7 pt-1 `}>
+                <Text style={s`w-86 h-6 pt-0.5 text-sm text-white text-clip overflow-hidden`}>ALEJANDRO FERNANDO VALLADARES MARTINEZ</Text>
+              </View>
+            )
+          }
         </ImageBackground>
         </View>
     </TouchableOpacity>
@@ -55,9 +64,18 @@ const CreditCard = ({ isExample, cardType}) => {
               12/24
             </Text>
           </View>
-          <View style={s` pl-7 pt-3 `}>
-            <Text style={s`pt-0.5  text-white `}>ALEJANDRO FERNANDO VALLADARES MARTINEZ</Text>
-          </View>
+          { Platform.OS === 'ios' ? 
+            (
+            <View style={s` pl-7 pt-3 `}>
+              <Text style={s`pt-0.5  text-white `}>ALEJANDRO FERNANDO VALLADARES MARTINEZ</Text>
+            </View> 
+            ):
+            (
+              <View style={s` pl-7 pt-1 `}>
+                <Text style={s`w-86 h-6 pt-0.5 text-sm text-white text-clip overflow-hidden`}>ALEJANDRO FERNANDO VALLADARES MARTINEZ</Text>
+              </View>
+            )
+          }
         </ImageBackground>
       </View>
     </TouchableOpacity> 

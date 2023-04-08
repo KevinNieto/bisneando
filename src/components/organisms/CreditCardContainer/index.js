@@ -7,7 +7,7 @@ const CreditCardContainer = () => {
 
 
   return (
-    <ScrollView style={s``}>
+    <ScrollView style={s`mb-14`}>
       <CreditCard cardType={"visa"}/>
       <CreditCard cardType={"master"}/>
       <CreditCard cardType={"american"}/>
