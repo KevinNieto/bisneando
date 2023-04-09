@@ -3,6 +3,7 @@ import { View, Text, ScrollView} from "react-native";
 import wrappedView from "../../../WrappedView";
 import { s } from "react-native-wind";
 import { SectionList } from "../../molecules";
+import PaymentReviewContainer from "../PaymentReviewContainer";
 
 const SectionPaymentReview = () => {
   const [visibleStatus, setVisibleStatus] = useState(false);
@@ -17,7 +18,7 @@ const SectionPaymentReview = () => {
         setVisibleStatus(!value);
       }}
     >
-      <Text>Vista detalle del historical</Text>
+      <PaymentReviewContainer/>
     </SectionList>
   
   );
