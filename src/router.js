@@ -20,6 +20,7 @@ import {
   CartView,
   ConfigView, 
   CouponsView, 
+  DetailHistoricalView, 
   DetailProduct, 
   FavoritesView, 
   HistoricalsView, 
@@ -109,6 +110,14 @@ const StackRouter = () => {
             hideNavBar={true}
           />
 
+          <Scene
+            title="DetailHistorical"
+            key="detailHistorical"
+            initial={true}
+            component={DetailHistoricalView}
+            hideNavBar={true}
+          />
+
     
           <Scene
             title="Cart"
@@ -123,7 +132,7 @@ const StackRouter = () => {
               key="historicalsView"
               component={HistoricalsView}
               hideNavBar={true}
-              initial={true}
+              
               icon={({ focused }) => (
                 <Icon
                   size={25}

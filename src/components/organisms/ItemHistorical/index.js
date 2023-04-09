@@ -4,11 +4,16 @@ import { s } from "react-native-wind";
 import { Badge, Button } from "./../../atoms";
 import tax from "../../../imgs/tax.png";
 import basura from "../../../imgs/icons/basura.png";
+import { Actions } from "react-native-router-flux";
 
 const ItemHistorical = ({
     status,
 
 }) => {
+
+  const onPress = () => {
+    Actions.detailHistorical()
+  };
 
   return (
     <View style={s` h-70 drop-shadow-xl  rounded-xl  bg-white flex flex-row  mt-2 w-full mx-1`} >
@@ -51,26 +56,30 @@ const ItemHistorical = ({
 
                         (
                           <Button
-                        style={[
-                              s`h-7 w-full mr-100 pl-4 bg-amber-400 justify-center rounded-md `,
-                        
-                        ]}
-                        labelStyles={
+                            style={[
+                                  s`h-7 w-full mr-100 pl-4 bg-amber-400 justify-center rounded-md `,
+                            
+                            ]}
+                            labelStyles={
                               s` font-bold text-center text-md`}
                         
                             title="Ver Detalle"
+                            event={onPress}
+
+
                         
                       />
                         ):(
                           <Button
-                        style={[
-                              s`h-7 w-full mr-100 pl-3 bg-amber-400 justify-center rounded-md `,
-                        
-                        ]}
-                        labelStyles={
+                            style={[
+                                  s`h-7 w-full mr-100 pl-3 bg-amber-400 justify-center rounded-md `,
+                            
+                            ]}
+                            labelStyles={
                               s` font-bold text-center text-md`}
                         
                             title="Seguimiento"
+                            event={onPress}
                         
                       />
                         )

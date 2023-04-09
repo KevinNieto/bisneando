@@ -7,17 +7,19 @@ const SectionListWrapper = ({
   children,
   title,
   iconName,
-  visible = true,
+  visible,
   event,
 }) => {
+  const onPress = () => {
+    event(visible);
+  };
+
   return (
     <>
       <TouchableOpacity
         disabled={!event ? true : false}
-        onPress={() => {
-          event(visible);
-        }}
-        style={s`h-8 w-full bg-gray-200 items-center pl-5 pr-5 flex-row justify-between`}
+        onPress={onPress}
+        style={s`h-12 w-full bg-white items-center pl-5 pr-5 flex-row justify-between mb-1`}
       >
         <Text style={s`font-bold text-base`}>{title}</Text>
         {iconName && <Icon name={iconName} size={35} color="black" />}

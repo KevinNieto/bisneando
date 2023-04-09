@@ -9,4 +9,5 @@ export { default as SignInModal } from "./SignIn";
 export { default as ConfigView} from "./Config";
 export { default as CartView} from "./Cart";
 export { default as DetailProduct} from "./DetailProduct";
+export { default as DetailHistoricalView} from "./DetailHistorical";
 export { default as AddEditCreditCardView} from "./AddEditCreditCard";
