@@ -6,12 +6,12 @@ const Badge = ({ status, type }) => {
   const configBadge =
      {
         ...(status == "process" && {
-          styles: s`bg-blue-200`,
-          text: "En proceso",
+          styles: s`bg-green-200`,
+          text: "EN PROCESO",
         }),
         ...(status == "done" && {
-          styles: s`bg-done`,
-          text: "Terminada",
+          styles: s`bg-gray-200`,
+          text: "ENTREGADO",
         }),
         ...(status == "pending" && {
           styles: s`bg-pending`,
@@ -30,11 +30,11 @@ const Badge = ({ status, type }) => {
   return (
     <View
       style={[
-        s`rounded-lg justify-center items-center w-40 h-8 mb-2`,
+        s`rounded-lg justify-center items-center w-full px-2 h-7 mb-2`,
         configBadge.styles,
       ]}
     >
-      <Text style={s`text-black text-base`}>{configBadge.text}</Text>
+      <Text style={s`text-black text-sm`}>{configBadge.text}</Text>
     </View>
   );
 };
