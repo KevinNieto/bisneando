@@ -6,7 +6,7 @@ const styles = StyleSheet.create({
     height: 60,
   },
   col1: {
-    width: 80,
+    width: 60,
     justifyContent: "center",
     alignItems: "center",
   },
@@ -16,7 +16,7 @@ const styles = StyleSheet.create({
   },
   icon: {
     alignSelf: "center",
-    fontSize: 35,
+    fontSize: 28,
   },
   title: {
     fontSize: 15,

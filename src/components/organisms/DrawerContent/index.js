@@ -5,7 +5,7 @@ import { getMenuDrawer } from "./../../../static/drawer";
 // import { AuthUserContext } from "../../../contexts/authUserProvider";
 // import { globalStyles } from "../../../styles";
 import { s } from "react-native-wind";
-import { DrawerMenuItem } from "../../atoms";
+import { DrawerMenuItem, DrawerTop } from "../../atoms";
 
 const DrawerContent = () => {
   const MENU = getMenuDrawer();
@@ -17,16 +17,12 @@ const DrawerContent = () => {
   useEffect(() => {}, []);
 
   return (
-    <SafeAreaView style={s`h-full bg-white`}>
+    <View style={s`h-full bg-white`}>
       <ScrollView
         style={s`h-full flex-1`}
         showsVerticalScrollIndicator={false}
       >
-        <Image
-          style={s`w-8/12 h-20 my-6 self-center`}
-          resizeMode="contain"
-          source={require("./../../../imgs/bisneando-cuadrado-trasnparente.png")}
-        />
+        <DrawerTop/>
         {MENU.map((menuItem) => {
          if (role === "all") {
            return (
@@ -40,7 +36,7 @@ const DrawerContent = () => {
        
 
       </ScrollView>
-    </SafeAreaView>
+    </View>
   );
 };
 

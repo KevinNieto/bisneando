@@ -3,6 +3,7 @@ export { default as AddButton} from "./AddButton";
 export { default as IncrementButton } from "./IncrementButton";
 export { default as Input } from "./Input";
 export { default as DrawerMenuItem } from "./DrawerMenuItem";
+export { default as DrawerTop } from "./DrawerTop";
 export { default as RowConfig } from "./RowConfig";
 export { default as TextInput } from "./TextInput";
 export { default as Badge } from "./Badge";

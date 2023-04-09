@@ -47,7 +47,7 @@ const getMenuDrawer = () => {
       title: "Inicio",
       role: "all",
       icon: "home",
-      color: THEME.bisneando.blue,
+      color: THEME.bisneando.gray,
       event: () => {
         Actions.home();
       },
@@ -58,7 +58,7 @@ const getMenuDrawer = () => {
       title: "Mis Favoritos",
       role: "all",
       icon: "heart",
-      color: THEME.bisneando.blue,
+      color: THEME.bisneando.gray,
       event: () => {
         Actions.favorites();
       },
@@ -69,7 +69,7 @@ const getMenuDrawer = () => {
       title: "Mis Tarjetas",
       role: "all",
       icon: "card-bulleted",
-      color: THEME.bisneando.blue,
+      color: THEME.bisneando.gray,
       event: () => {
         Actions.payment();
       },
@@ -80,7 +80,7 @@ const getMenuDrawer = () => {
       title: "Mis Cupones",
       role: "all",
       icon: "tag",
-      color: THEME.bisneando.blue,
+      color: THEME.bisneando.gray,
       event: () => {
         Actions.coupons();
       },
@@ -91,7 +91,7 @@ const getMenuDrawer = () => {
       title: "Historial",
       role: "all",
       icon: "history",
-      color: THEME.bisneando.blue,
+      color: THEME.bisneando.gray,
       event: () => {
         Actions.historicalsView();
       },
@@ -101,7 +101,7 @@ const getMenuDrawer = () => {
     //   title: "alls",
     //   role: "company",
     //   icon: "card-account-details-outline",
-    //   color: THEME.bisneando.blue,
+    //   color: THEME.bisneando.gray,
     //   event: () => {
     //     Actions.allsView();
     //   },
@@ -111,29 +111,23 @@ const getMenuDrawer = () => {
       title: "Mis Direcciones",
       role: "all",
       icon: "pin",
-      color: THEME.bisneando.blue,
+      color: THEME.bisneando.gray,
       event: () => {
         Actions.address();
       },
     },
     {
       key: "menu-item-6",
-      title: "Configuración",
+      title: "Mi perfil",
       role: "all",
-      icon: "cog",
-      color: THEME.bisneando.blue,
+      icon: "human-greeting",
+      color: THEME.bisneando.gray,
       event: () => {
         Actions.configView();
       },
     },
-    {
-      key: "menu-item-7",
-      title: "Cerrar sesión",
-      role: "all",
-      icon: "logout",
-      color: THEME.bisneando.blue,
-      event: () => {Actions.replace("signInModal")},
-    },
+    
+  
   ];
 };
 

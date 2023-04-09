@@ -3,12 +3,14 @@ import { StyleSheet } from "react-native";
 const THEME = {
   bisneando: {
     yellow: "#FDB727",
+    gray: "#4C545F",
     green: "#7FC143",
     red: "#CF3339",
     black: "#000000",
     white:"#ffffff",
     purple: "#7E6BAF",
     purpleSelected: "#634f8b",
+    
   },
   generalCategories: {
     yellow: "#FDB727",
