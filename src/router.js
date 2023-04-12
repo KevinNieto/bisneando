@@ -71,7 +71,7 @@ const StackRouter = () => {
           <Scene
             title="Coupons"
             key="coupons"
-            initial={true}
+            
             component={CouponsView}
             hideNavBar={true}
           />
@@ -132,7 +132,7 @@ const StackRouter = () => {
               key="historicalsView"
               component={HistoricalsView}
               hideNavBar={true}
-              
+              initial={true}
               icon={({ focused }) => (
                 <Icon
                   size={25}
